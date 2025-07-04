@@ -3,7 +3,6 @@ import requests
 import pandas as pd
 
 API_URL = "https://crop-recommendation-system-28wj.onrender.com/predict"
-"
 st.set_page_config(page_title="Crop Recommendation System", page_icon="🌾")
 st.title("Crop Recommendation System 🌾")
 st.markdown("Enter your soil and weather conditions to get crop recommendations.")
