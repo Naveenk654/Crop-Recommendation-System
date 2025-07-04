@@ -4,8 +4,8 @@ from typing import List, Dict, Any,Annotated
 from pydantic import BaseModel, Field
 import pandas as pd
 import pickle
-from crop_reason import crop_reasons  # Assuming you have a crop_reason module with the crop reasons
-from weather import get_weather_data  # Assuming you have a weather module for fetching weather data
+from crop_reason import crop_reasons  #  crop_reason module with the crop reasons
+from weather import get_weather_data  #  weather module for fetching weather data
 app= FastAPI()
 with open('crop_prediction.pkl', 'rb') as f:
     model = pickle.load(f)
